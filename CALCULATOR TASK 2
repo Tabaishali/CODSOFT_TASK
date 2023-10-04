@@ -1,0 +1,37 @@
+# Python Programming @ codsoft
+# # Task 2 --- CALCULATOR  
+# DESIGN A SIMPAL CALCULATOR WITH ARITHMETIC OPERATION PROMT THE USER TO INPUT TWO NUMBERS AND AN OPERATION CHOICE. 
+# PERFORM THE CALCULATION AND DISPLAY THE RESULT.
+
+cont="yes"  
+while cont.lower() == "yes":
+    # Ask the user to choose an operation
+    print("Select operation\n1.Add\n2.Subtract\n3.Multiply\n4.Divide")
+    
+    # Get the user's choice
+    choice = input("Enter choice(1/2/3/4):")
+
+    # Get the user's numbers
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    
+  # Perform the operation and print the result
+    if choice == '1':
+        print(num1,"+",num2,"=", (num1 + num2))
+
+    elif choice == '2':
+        print(num1,"-",num2,"=", (num1 - num2))
+
+    elif choice == '3':
+        print(num1,"*",num2,"=", (num1 * num2))
+
+    elif choice == '4':
+        print(num1,"/",num2,"=", (num1 / num2))
+    else:
+        print("Invalid input")
+    cont = input("Continue?yes/no:")
+    if cont == "no":
+        break    # break the while loop if answer is no
+    else:
+        print("Invalid input")
+       
